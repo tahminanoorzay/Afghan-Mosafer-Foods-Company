@@ -27,6 +27,8 @@ section h4 span {
 .exhibition-img {
   width: 100%;
   height: 50%;
-
   border-radius: 0;
+}
+.exhibition-item {
+  padding-bottom: 0;
 }
