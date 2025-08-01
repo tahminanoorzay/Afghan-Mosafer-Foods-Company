@@ -11,8 +11,11 @@ header.masthead {
   align-items: center;
   justify-content: center;
 }
-
-.services-img {
+section img {
   border-radius: 50%;
   height: 300px;
+}
+
+section h4 span {
+  color: #5e11a7;
 }
