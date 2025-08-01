@@ -1,5 +1,5 @@
 _<!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <title>Afghan Mosafer Foods</title>
@@ -7,14 +7,28 @@ _<!DOCTYPE html>
 
     <!-- Links -->
 
+    <!-- CDN Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Links -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="customStyles.css" />
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
     <!-- Font Awesome icons (free version)-->
     <script
       src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
       crossorigin="anonymous"
     ></script>
+
     <!-- Google fonts-->
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
@@ -26,14 +40,9 @@ _<!DOCTYPE html>
       rel="stylesheet"
       type="text/css"
     />
-    <!-- CDN Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
-      rel="stylesheet"
-    />
   </head>
 
-  <body id="page-top" style="background-color: cadetblue">
+  <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container d-flex align-items-center justify-content-between">
@@ -72,6 +81,65 @@ _<!DOCTYPE html>
       </div>
     </nav>
 
+    <!-- Masthead-->
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-subheading">
+          Welcome to Afghan Mosafer Foods Company!
+        </div>
+        <a class="btn btn-primary btn-xl text-uppercase" href="#services"
+          >Tell Me More</a
+        >
+      </div>
+    </header>
+
+    <!-- Services-->
+    <section class="page-section" id="services">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Services</h2>
+          <h3 class="section-subheading">
+            Here you can buy saffron in various packaging options at a
+            reasonable price.
+          </h3>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img class="services-img" src="/assets/img/2-gram.jpg" alt="" />
+            <h4 class="my-3">
+              2 Gram Saffron / <span style="color: #5e11a7">Price</span> : 25$
+            </h4>
+            <p>
+              Discover the power of premium saffron in this hygienically packed
+              2-gram package – pure quality, maximum benefit, and unmatched
+              aroma for your daily needs.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img class="services-img" src="/assets/img/3-gram.jpg" alt="" />
+            <h4 class="my-3">
+              3 Gram Saffron / <span style="color: #5e11a7">Price</span> : 39$
+            </h4>
+            <p>
+              Unlock the richness of 3 grams of premium saffron, elegantly
+              sealed in a distinctive package – delivering purity, health
+              benefits, and a luxurious aroma in every pinch.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img class="services-img" src="/assets/img/10-gram.jpg" alt="" />
+            <h4 class="my-3">
+              10 Gram Saffron / <span style="color: #5e11a7">Price</span> : 45$
+            </h4>
+            <p>
+              Experience 10 grams of premium saffron in a completely new
+              packaging — elegantly paired with a custom saffron mortar for the
+              ultimate aroma and freshness.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Script Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
