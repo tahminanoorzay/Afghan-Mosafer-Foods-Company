@@ -1,7 +1,3 @@
-/* body {
-  background-color: cadetblue;
-} */
-
 #mainNav {
   padding-top: 50px;
 }
@@ -92,7 +88,7 @@ section h4 span {
   z-index: 10;
   min-width: 150px;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(52, 152, 219, 0.5);
+  box-shadow: 0 8px 20px #3498db80;
   border: 3px solid #1c5980;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
@@ -101,7 +97,7 @@ section h4 span {
 
 .person:hover {
   transform: translateY(-15px) scale(1.1) rotate(-3deg);
-  box-shadow: 0 15px 40px rgba(41, 128, 185, 0.9);
+  box-shadow: 0 15px 40px #2980b9e6;
   background: linear-gradient(135deg, #2980b9, #1f4f75);
   z-index: 20;
   filter: brightness(1.1);
@@ -125,41 +121,60 @@ section h4 span {
 .person.ceo {
   background: linear-gradient(135deg, #e74c3c, #c0392b);
   border-color: #7b1a15;
-  box-shadow: 0 8px 25px rgba(231, 76, 60, 0.6);
+  box-shadow: 0 8px 25px #e74c3c99;
 }
 
 .person.cto {
   background: linear-gradient(135deg, #27ae60, #1e8449);
   border-color: #145a32;
-  box-shadow: 0 8px 25px rgba(39, 174, 96, 0.6);
+  box-shadow: 0 8px 25px #27ae6099;
 }
 
 .person.cmo {
-  background: linear-gradient(135deg, #8e44ad, #6c3483);
+  background: linear-gradient(135deg, rgb(154, 97, 179), #6c3483);
   border-color: #4a235a;
-  box-shadow: 0 8px 25px rgba(142, 68, 173, 0.6);
+  box-shadow: 0 8px 25px #8e44ad99;
 }
 
 .person.frontend {
   background: linear-gradient(135deg, #f39c12, #d68910);
   border-color: #a7630a;
-  box-shadow: 0 8px 25px rgba(243, 156, 18, 0.6);
+  box-shadow: 0 8px 25px #f39c1299;
 }
 
 .person.backend {
   background: linear-gradient(135deg, #16a085, #117a65);
   border-color: #0a4d3c;
-  box-shadow: 0 8px 25px rgba(22, 160, 133, 0.6);
+  box-shadow: 0 8px 25px #16a08599;
 }
 
 .person.seo {
   background: linear-gradient(135deg, #d35400, #a84300);
   border-color: #652e00;
-  box-shadow: 0 8px 25px rgba(211, 84, 0, 0.6);
+  box-shadow: 0 8px 25px #d3540099;
 }
 
 .person.content {
   background: linear-gradient(135deg, #2980b9, #1f618d);
   border-color: #174b75;
-  box-shadow: 0 8px 25px rgba(41, 128, 185, 0.6);
+  box-shadow: 0 8px 25px #2980b999;
+}
+
+.card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bg-purple {
+  background-color: #edd5f7 !important;
+  p {
+    color: #8b68a3 !important;
+  }
+  h5 {
+    color: #5e11a7;
+  }
 }
