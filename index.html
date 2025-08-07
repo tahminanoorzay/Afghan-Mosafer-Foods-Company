@@ -18,7 +18,7 @@ _<!DOCTYPE html>
     <link rel="stylesheet" href="customStyles.css" />
 
     <!-- JavaScript Link -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -39,6 +39,16 @@ _<!DOCTYPE html>
       href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
       rel="stylesheet"
       type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap"
+      rel="stylesheet"
     />
   </head>
 
@@ -72,7 +82,12 @@ _<!DOCTYPE html>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#image-gallery">Image Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#saffronInfo">Saffron Info</a>
             </li>
@@ -84,20 +99,33 @@ _<!DOCTYPE html>
       </div>
     </nav>
 
-    <!-- Masthead-->
-    <header class="masthead">
+    <!-- Masthead -->
+    <header class="masthead text-white d-flex align-items-center">
       <div class="container">
-        <div class="masthead-subheading">
-          Welcome to Afghan Mosafer Foods Company!
+        <div class="row align-items-center flex-column-reverse flex-lg-row">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="mb-4">Welcome to Afghan Mosafer Foods Company!</h1>
+            <h4 class="mb-5">
+              Production, processing, packaging and exporter of Afghan saffron
+              with the best quality
+            </h4>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#services"
+              ><h4>Tell Me More</h4></a
+            >
+          </div>
+          <div class="col-lg-6 text-center mb-4 mb-lg-0">
+            <img
+              src="/assets/img/saffron20.JPG"
+              alt="Saffron Product"
+              class="img-fluid rounded shadow saffron-img w-100"
+            />
+          </div>
         </div>
-        <a class="btn btn-primary btn-xl text-uppercase" href="#services"
-          >Tell Me More</a
-        >
       </div>
     </header>
 
     <!-- Services-->
-    <section class="page-section" id="services">
+    <section class="py-5 page-section" id="services">
       <div class="container">
         <div class="text-center">
           <h2 class="section-heading text-uppercase">Services</h2>
@@ -108,8 +136,12 @@ _<!DOCTYPE html>
         </div>
         <div class="row text-center">
           <div class="col-md-4">
-            <img class="services-img" src="/assets/img/2-gram.jpg" alt="" />
-            <h4 class="my-3">2 Gram Saffron / <span>Price</span> : 25$</h4>
+            <img
+              class="services-img"
+              src="/assets/img/Services/2-gram.jpg"
+              alt=""
+            />
+            <h4 class="my-3"><span>2 Gram Saffron</span></h4>
             <p>
               Discover the power of premium saffron in this hygienically packed
               2-gram package – pure quality, maximum benefit, and unmatched
@@ -117,8 +149,12 @@ _<!DOCTYPE html>
             </p>
           </div>
           <div class="col-md-4">
-            <img class="services-img" src="/assets/img/3-gram.jpg" alt="" />
-            <h4 class="my-3">3 Gram Saffron / <span>Price</span> : 39$</h4>
+            <img
+              class="services-img"
+              src="/assets/img/Services/3-gram.JPG"
+              alt=""
+            />
+            <h4 class="my-3"><span>3 Gram Saffron</span></h4>
             <p>
               Unlock the richness of 3 grams of premium saffron, elegantly
               sealed in a distinctive package – delivering purity, health
@@ -126,8 +162,49 @@ _<!DOCTYPE html>
             </p>
           </div>
           <div class="col-md-4">
-            <img class="services-img" src="/assets/img/10-gram.jpg" alt="" />
-            <h4 class="my-3">10 Gram Saffron / <span>Price</span> : 45$</h4>
+            <img
+              class="services-img"
+              src="/assets/img/Services/10-gram.JPG"
+              alt=""
+            />
+            <h4 class="my-3"><span>10 Gram Saffron</span></h4>
+            <p>
+              Experience 10 grams of premium saffron in a completely new
+              packaging — elegantly paired with a custom saffron mortar for the
+              ultimate aroma and freshness.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              class="services-img"
+              src="/assets/img/Services/0.5-gram.JPG"
+              alt=""
+            />
+            <h4 class="my-3"><span>0.5 Gram Saffron</span></h4>
+            <p>
+              A delicate 0.5 gram package offering the pure essence of Afghan
+              saffron—perfect for those who value quality in small quantities.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              class="services-img"
+              src="/assets/img/Services/3---gr4am.JPG"
+              alt=""
+            />
+            <h4 class="my-3"><span>3 Gram Saffron</span></h4>
+            <p>
+              Elegantly packaged 3 gram saffron, combining traditional quality
+              with modern freshness to delight your senses.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              class="services-img"
+              src="/assets/img/Services/3--gram.jpg"
+              alt=""
+            />
+            <h4 class="my-3"><span>3 Gram Saffron</span></h4>
             <p>
               Experience 10 grams of premium saffron in a completely new
               packaging — elegantly paired with a custom saffron mortar for the
@@ -139,7 +216,7 @@ _<!DOCTYPE html>
     </section>
 
     <!-- Exhibition Grid-->
-    <section class="page-section bg-light" id="exhibition">
+    <section class="py-5 page-section" id="exhibition">
       <div class="container">
         <div class="text-center">
           <h2 class="section-heading text-uppercase">Exhibition</h2>
@@ -151,11 +228,32 @@ _<!DOCTYPE html>
             <div class="exhibition-item">
               <img
                 class="img-fluid exhibition-img"
+                src="assets/img/Exhibition/7-2023.jpg"
+                alt="..."
+              />
+              <div class="exhibition-caption">
+                <div class="exhibition-caption-heading">
+                  <span>Imam Abu Hanifa (Kabul)</span>
+                </div>
+                <div class="exhibition-caption-subheading text-muted">
+                  7-2023
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-0">
+            <!-- Exhibition item 1-->
+            <div class="exhibition-item">
+              <img
+                class="img-fluid exhibition-img"
                 src="assets/img/Exhibition/12-2023.jpg"
                 alt="..."
               />
               <div class="exhibition-caption">
-                <div class="exhibition-caption-heading">Hotel Tejarat</div>
+                <div class="exhibition-caption-heading">
+                  <span>Hotel Tejarat (Herat)</span>
+                </div>
                 <div class="exhibition-caption-subheading text-muted">
                   12-2023
                 </div>
@@ -172,7 +270,9 @@ _<!DOCTYPE html>
                 alt="..."
               />
               <div class="exhibition-caption">
-                <div class="exhibition-caption-heading">Arg Herat</div>
+                <div class="exhibition-caption-heading">
+                  <span>Hotel Arg (Herat)</span>
+                </div>
                 <div class="exhibition-caption-subheading text-muted">
                   8-2024
                 </div>
@@ -190,27 +290,10 @@ _<!DOCTYPE html>
               />
               <div class="exhibition-caption">
                 <div class="exhibition-caption-heading">
-                  Ministry of Agriculture
+                  <span>Directorate of Agriculture and Livestock (Herat)</span>
                 </div>
                 <div class="exhibition-caption-subheading text-muted">
                   9-2024
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6 mb-0">
-            <!-- Exhibition item 4-->
-            <div class="exhibition-item">
-              <img
-                class="img-fluid exhibition-img"
-                src="assets/img/Exhibition/10-2024.JPG"
-                alt="..."
-              />
-              <div class="exhibition-caption">
-                <div class="exhibition-caption-heading">Arg Herat</div>
-                <div class="exhibition-caption-subheading text-muted">
-                  10-2024
                 </div>
               </div>
             </div>
@@ -225,7 +308,9 @@ _<!DOCTYPE html>
                 alt="..."
               />
               <div class="exhibition-caption">
-                <div class="exhibition-caption-heading">Asman Hall</div>
+                <div class="exhibition-caption-heading">
+                  <span>Asman Hall (Herat)</span>
+                </div>
                 <div class="exhibition-caption-subheading text-muted">
                   7-2025
                 </div>
@@ -234,17 +319,19 @@ _<!DOCTYPE html>
           </div>
 
           <div class="col-lg-4 col-sm-6 mb-0">
-            <!-- Exhibition item 6-->
+            <!-- Exhibition item 5-->
             <div class="exhibition-item">
               <img
                 class="img-fluid exhibition-img"
-                src="assets/img/Exhibition/7-2025.jpg"
+                src="assets/img/Exhibition/8-2025.jpg"
                 alt="..."
               />
               <div class="exhibition-caption">
-                <div class="exhibition-caption-heading">Bamyan Province</div>
+                <div class="exhibition-caption-heading">
+                  <span>Bamyan Provincel</span>
+                </div>
                 <div class="exhibition-caption-subheading text-muted">
-                  8-2025
+                  7-2025
                 </div>
               </div>
             </div>
@@ -254,8 +341,8 @@ _<!DOCTYPE html>
     </section>
 
     <!-- About-->
-    <section class="page-section" id="about">
-      <div class="container py-5">
+    <section class="py-5 page-section" id="about">
+      <div class="container">
         <div class="text-center mb-5">
           <h2 class="section-heading text-uppercase">About</h2>
           <h3 class="section-subheading">Here you can learn more about us.</h3>
@@ -380,8 +467,27 @@ _<!DOCTYPE html>
       </div>
     </section>
 
+    <!-- Image Gallery -->
+    <section id="image-gallery" class="py-5 page-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-heading text-uppercase">Image Gallery</h2>
+          <h3 class="section-subheading">A visual journey of progress</h3>
+        </div>
+
+        <div class="slider-container">
+          <div class="slides" id="slides"></div>
+
+          <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <div class="dots" id="dots"></div>
+      </div>
+    </section>
+
     <!-- Team -->
-    <section class="page-section bg-light" id="team">
+    <section class="py-5 page-section" id="team">
       <div class="container">
         <div class="text-center mb-5">
           <h2 class="section-heading text-uppercase">Team</h2>
@@ -444,7 +550,7 @@ _<!DOCTYPE html>
     </section>
 
     <!-- Saffron Info -->
-    <section class="page-section" id="saffronInfo">
+    <section class="py-5 page-section" id="saffronInfo">
       <div class="container">
         <div class="text-center mb-5">
           <h2 class="section-heading text-uppercase">About Saffron</h2>
@@ -470,10 +576,10 @@ _<!DOCTYPE html>
                     manganese.
                   </p>
                   <img
-                    src="assets/img/About Saffron/saffron1.jpg"
-                    alt="Properties Image"
-                    class="img-fluid mx-auto d-block mt-3"
-                    style="max-width: 80%; border-radius: 10px"
+                    src="assets/img/About Saffron/Introduction-to-saffron-onion.jpg"
+                    class="img-fluid w-100 mx-auto d-block mt-3"
+                    alt="..."
+                    style="height: 300px; object-fit: cover"
                   />
                 </div>
               </div>
@@ -492,10 +598,10 @@ _<!DOCTYPE html>
                     properties that help reduce pain.
                   </p>
                   <img
-                    src="assets/img/About Saffron/saffron6.jpg"
-                    alt="Properties Image"
-                    class="img-fluid mx-auto d-block mt-3"
-                    style="max-width: 80%; border-radius: 10px"
+                    src="assets/img/About Saffron/saffron3.jpg"
+                    class="img-fluid w-100 mx-auto d-block mt-3"
+                    alt="..."
+                    style="height: 300px; object-fit: cover"
                   />
                 </div>
               </div>
@@ -514,10 +620,10 @@ _<!DOCTYPE html>
                     lead to low blood pressure or bleeding issues.
                   </p>
                   <img
-                    src="assets/img/About Saffron/saffron3.jpg"
-                    alt="Properties Image"
-                    class="img-fluid mx-auto d-block mt-3"
-                    style="max-width: 80%; border-radius: 10px"
+                    src="assets/img/About Saffron/saffron6.jpg"
+                    class="img-fluid w-100 mx-auto d-block mt-3"
+                    alt="..."
+                    style="height: 300px; object-fit: cover"
                   />
                 </div>
               </div>
@@ -527,60 +633,73 @@ _<!DOCTYPE html>
       </div>
     </section>
 
-    <!-- Contact-->
+    <!-- Contact & Map Side-by-Side Section -->
     <section id="contact" class="py-5 page-section contact-bg">
-      <div class="container text-center">
-        <div class="text-center mb-5">
-          <h2 class="section-heading text-uppercase">Contact Us</h2>
-          <h3 class="section-subheading">Send us your message and we’ll get back to you.</h3>
-          </p>
-        </div>
-
-        <form
-          action="https://formspree.io/f/xzzvjjbl"
-          method="POST"
-          class="w-100 mx-auto"
-          style="max-width: 600px"
-        >
-          <div class="mb-3">
-            <label for="name" class="form-label">Your Name</label>
-            <input type="text" class="form-control" name="name" required />
-          </div>
-
-          <div class="mb-3">
-            <label for="email" class="form-label">Your Email</label>
-            <input type="email" class="form-control" name="email" required />
-          </div>
-
-          <div class="mb-3">
-            <label for="message" class="form-label">Your Message</label>
-            <textarea
-              class="form-control"
-              name="message"
-              rows="5"
-              required
-            ></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-      </div>
-    </section>
-
-    <!-- Map Section -->
-    <section id="map" class="py-4 page-section map-bg">
       <div class="container">
-        <h2 class="section-heading text-center text-uppercase">Our Location</h2>
-        <div class="card shadow-sm mx-auto" style="max-width: 350px">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d296.5947595840438!2d62.17603956516111!3d34.36539723198937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f3ce7000c64bdc5%3A0xf395206d584623af!2z2LTYsdqp2Kog2KrYrNin2LHYqtuMINin2YHYutin2YYg2YXYs9in2YHYsSAtIEFmZ2hhbiBNb3NhZmVyIEZvb2Rz!5e1!3m2!1sen!2s!4v1754505930076!5m2!1sen!2s"
-            width="400"
-            height="200"
-            style="border-radius: 10px"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div class="row">
+          <!-- Contact Form -->
+          <div class="col-md-6 mb-4 card p-4 contact">
+            <div class="text-center mb-4">
+              <h2 class="text-uppercase">Contact Us</h2>
+              <h3 class="section-subheading">
+                Send us your message and we’ll get back to you.
+              </h3>
+            </div>
+
+            <form
+              action="https://formspree.io/f/xzzvjjbl"
+              method="POST"
+              class="w-100 mx-auto"
+              style="max-width: 500px"
+            >
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" name="name" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Map -->
+          <div
+            class="col-md-6 d-flex flex-column align-items-center justify-content-center map"
+          >
+            <div class="card p-3" style="max-width: 500px; width: 100%">
+              <h2 class="text-uppercase text-center mb-3">Our Location</h2>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d296.5947595840438!2d62.17603956516111!3d34.36539723198937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f3ce7000c64bdc5%3A0xf395206d584623af!2z2LTYsdqp2Kog2KrYrNin2LHYqtuMINin2YHYutin2YYg2YXYs9in2YHYsSAtIEFmZ2hhbiBNb3NhZmVyIEZvb2Rz!5e1!3m2!1sen!2s!4v1754505930076!5m2!1sen!2s"
+                width="100%"
+                height="250"
+                style="border-radius: 10px; border: none"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>
