@@ -27,21 +27,10 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   // -----------
-
-  const imageUrls = [
-    "https://picsum.photos/id/1003/1000/500",
-    "https://picsum.photos/id/1005/1000/500",
-    "https://picsum.photos/id/1006/1000/500",
-    "https://picsum.photos/id/1010/1000/500",
-    "https://picsum.photos/id/1011/1000/500",
-    "https://picsum.photos/id/1012/1000/500",
-    "https://picsum.photos/id/1013/1000/500",
-    "https://picsum.photos/id/1014/1000/500",
-    "https://picsum.photos/id/1015/1000/500",
-    "https://picsum.photos/id/1016/1000/500",
-    "https://picsum.photos/id/1018/1000/500",
-    "https://picsum.photos/id/1020/1000/500",
-  ];
+  const imageUrls = [];
+  for (let i = 1; i <= 40; i++) {
+    imageUrls.push(`assets/img/Image-Gallery/${i}.jpg`);
+  }
 
   const slidesContainer = document.getElementById("slides");
   const dotsContainer = document.getElementById("dots");
