@@ -26,7 +26,6 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // -----------
   const imageUrls = [];
   for (let i = 1; i <= 40; i++) {
     imageUrls.push(`assets/img/Image-Gallery/${i}.jpg`);
@@ -35,25 +34,31 @@ window.addEventListener("DOMContentLoaded", () => {
   const slidesContainer = document.getElementById("slides");
   const dotsContainer = document.getElementById("dots");
 
-  imageUrls.forEach((url, index) => {
-    const slide = document.createElement("div");
-    slide.className = "slide";
-    slide.innerHTML = `<img src="${url}" alt="Slide ${index + 1}">`;
-    slidesContainer.appendChild(slide);
-
-    const dot = document.createElement("span");
-    dot.className = "dot" + (index === 0 ? " active" : "");
-    dot.setAttribute("onclick", `goToSlide(${index})`);
-    dotsContainer.appendChild(dot);
-  });
-
   let currentIndex = 0;
-  const dots = document.querySelectorAll(".dot");
-  const totalSlides = dots.length;
+  let totalSlides = 0;
+
+  imageUrls.forEach((url, index) => {
+    const img = new Image();
+    img.src = url;
+    img.onload = function () {
+      const slide = document.createElement("div");
+      slide.className =
+        "slide " + (img.width > img.height ? "landscape" : "portrait");
+      slide.innerHTML = `<img src="${url}" alt="Slide ${index + 1}">`;
+      slidesContainer.appendChild(slide);
+
+      const dot = document.createElement("span");
+      dot.className = "dot" + (totalSlides === 0 ? " active" : "");
+      dot.setAttribute("onclick", `goToSlide(${totalSlides})`);
+      dotsContainer.appendChild(dot);
+
+      totalSlides++;
+    };
+  });
 
   function updateSlide() {
     slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-    dots.forEach((dot, i) => {
+    document.querySelectorAll(".dot").forEach((dot, i) => {
       dot.classList.toggle("active", i === currentIndex);
     });
   }
@@ -67,7 +72,4 @@ window.addEventListener("DOMContentLoaded", () => {
     currentIndex = n;
     updateSlide();
   };
-
-  // شروع با اولین اسلاید
-  updateSlide();
 });
