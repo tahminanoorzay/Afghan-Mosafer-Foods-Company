@@ -3988,6 +3988,13 @@ fieldset:disabled .btn {
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition);
 }
+
+.navbar img {
+  width: 100px;
+  height: 60px !important;
+  border-radius: 10px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
     transition: none;
