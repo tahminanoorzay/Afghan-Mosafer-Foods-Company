@@ -102,6 +102,7 @@
 
 body {
   margin: 0;
+  padding: 0 !important;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -140,6 +141,10 @@ h1,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
+}
+
+#contact span {
+  font-family: "Merienda", cursive;
 }
 
 h1,
