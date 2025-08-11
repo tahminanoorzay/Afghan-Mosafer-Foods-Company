@@ -146,16 +146,13 @@ h1,
 #contact span {
   font-family: "Merienda", cursive;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 0f3fe5c (Remove the style tags from inside the HTML file and transfer them to the CSS file.)
+
 #socials a {
   font-size: 1.8rem;
 }
-  .insta {
-    color: #e4405f;
-  }
+.insta {
+  color: #e4405f;
+}
 .what {
   color: #25d366;
 }
@@ -172,11 +169,6 @@ h1,
   height: 300px;
   object-fit: cover;
 }
-<<<<<<< HEAD
-=======
->>>>>>> 21b8052 (Sure! Here's the English translation:)
-=======
->>>>>>> 0f3fe5c (Remove the style tags from inside the HTML file and transfer them to the CSS file.)
 
 h1,
 .h1 {
