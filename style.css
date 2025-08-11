@@ -170,6 +170,11 @@ h1,
   object-fit: cover;
 }
 
+#about-company .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
 h1,
 .h1 {
   font-size: calc(1.375rem + 1.5vw);
@@ -11302,7 +11307,7 @@ span {
 }
 
 #mainNav {
-  padding-top: 50px !important;
+  /* padding-top: 20px !important; */
   padding-bottom: 1rem;
   background-color: #212529;
 }

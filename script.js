@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   const imageUrls = [];
-  for (let i = 1; i <= 40; i++) {
+  for (let i = 1; i <= 28; i++) {
     imageUrls.push(`assets/img/Image-Gallery/${i}.jpg`);
   }
 
