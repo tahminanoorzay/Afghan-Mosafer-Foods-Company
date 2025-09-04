@@ -11427,6 +11427,8 @@ header.masthead .masthead-heading {
 }
 
 .saffron-img {
+  max-width: 100%;
+  height: auto;
   transition: transform 0.6s ease, box-shadow 0.6s ease;
 }
 
