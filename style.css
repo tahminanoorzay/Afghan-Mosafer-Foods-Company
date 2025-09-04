@@ -170,7 +170,7 @@ h1,
   object-fit: cover;
 }
 
-#services .sizeImg{
+#services .sizeImg {
   width: 360px;
   height: 270px;
 }
@@ -1206,7 +1206,9 @@ progress {
     flex: 0 0 auto;
     width: 25%;
   }
-  .col-md-4 ,.col-md-6,.col-md-12 {
+  .col-md-4,
+  .col-md-6,
+  .col-md-12 {
     flex: 0 0 auto;
     width: 33.33333333%;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -1214,7 +1216,9 @@ progress {
     position: relative;
     z-index: 0;
   }
-  .col-md-4:hover,.col-md-6:hover,.col-md-12:hover {
+  .col-md-4:hover,
+  .col-md-6:hover,
+  .col-md-12:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 25px #d400ff4d;
     z-index: 5;
