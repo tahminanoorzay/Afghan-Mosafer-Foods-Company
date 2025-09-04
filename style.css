@@ -170,6 +170,11 @@ h1,
   object-fit: cover;
 }
 
+#services .sizeImg{
+  width: 360px;
+  height: 270px;
+}
+
 #about-company .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
